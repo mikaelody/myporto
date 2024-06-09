@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+* {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.text-gradient {
+    background: -webkit-linear-gradient(315deg, #006769 0%, #40A578 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient-primary-to-secondary {
+    background: #E6FF94;
+    background: linear-gradient(315deg, #006769 0%, #40A578 100%);
+}
+
+.feature {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+}
+
+[data-bs-theme="light"] {
+    --bs-secondary: #40A578;
+    --bs-secondary-rgb: 64, 165, 120;
+}
+
+[data-bs-theme="dark"] {
+    /*Background*/
+    --bs-body-bg: #000 !important;
+    --bs-secondary: #E6FF94 !important;
+    --bs-secondary-rgb: 230, 255, 148 !important;
+
+    .text-gradient {
+        background: -webkit-linear-gradient(315deg, #9DDE8B 0%, #E6FF94 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .bg-gradient-primary-to-secondary {
+        background: #006769;
+        background: linear-gradient(135deg, #006769 0%, #40A578 100%);
+    }
+
+    .text-primary {
+        color: #9DDE8B !important;
+    }
+
+    .btn-primary {
+        background-color: #40A578 !important;
+        color: #000 !important;
+    }
+
+    .btn-outline-dark {
+        color: #fff;
+        border-color: #fff !important;
+    }
+}
